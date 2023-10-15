@@ -7,7 +7,22 @@
     <title>knd 2023.11.12 parkconcert</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div>
+        <button type="button" id="ready">ready</button>
+        <button type="button" id="connect">connect</button>
+        <button type="button" id="stopVideo">stop video</button>
+        <button type="button" id="hangup">hang up</button>
+      </div>
+      <div>
+        <video id="localVideo" width="240" height="180"></video>
+        <video id="remoteVideo" width="240" height="180"></video>
+      </div>
+      <div>
+        <textarea id="SDP" disabled></textarea>
+        <textarea id="ICE" disabled></textarea>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
